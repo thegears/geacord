@@ -1,0 +1,28 @@
+{
+  "translation": {
+    "home": {
+      "navbar": {
+        "profile": {
+          "logout": "Log Out",
+          "profile": "Profile"
+        },
+        "theme": {
+          "theme": "Theme",
+          "dark": "Dark",
+          "light": "Light"
+        },
+        "language": {
+          "language": "language"
+        }
+      },
+      "footer": {
+        "text1": "Free, open source chat app",
+        "text2": "Copyright © 2023 - All right reserved"
+      },
+      "middle": {
+        "text1": "Hello there, this is a chat app",
+        "text2": "...but it's free and open source!"
+      }
+    }
+  }
+}

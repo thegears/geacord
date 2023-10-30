@@ -1,0 +1,28 @@
+{
+  "translation": {
+    "home": {
+      "navbar": {
+        "profile": {
+          "logout": "Çıkış Yap",
+          "profile": "Profil"
+        },
+        "theme": {
+          "theme": "Tema",
+          "dark": "Karanlık",
+          "light": "Aydınlık"
+        },
+        "language": {
+          "language": "Dil"
+        }
+      },
+      "footer": {
+        "text1": "Ücretsiz, açık kaynak chat app",
+        "text2": "Copyright © 2023 - Bütün hakları saklıdır"
+      },
+      "middle": {
+        "text1": "Merhaba, bu bir chat app",
+        "text2": "...ama ücretsiz ve açık kaynak!"
+      }
+    }
+  }
+}
