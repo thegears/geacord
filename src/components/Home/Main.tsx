@@ -1,12 +1,12 @@
 import { themeChange } from 'theme-change';
 import { useEffect } from 'react';
-import NavBar from './NavBar/NavBar';
 import Footer from './Footer/Footer';
-import '../services/i18n/i18n';
+import NavBar from '../NavBar/NavBar';
+import '../../services/i18n/i18n';
 import { useTranslation } from 'react-i18next';
 import Middle from './Middle/Middle'
 
-export default function Main() {
+export default function HomeMain() {
 
 
   const { i18n } = useTranslation();
@@ -20,7 +20,7 @@ export default function Main() {
 
   return <>
     <NavBar />
-    <Middle/>
+    <Middle />
     <Footer />
   </>
 };

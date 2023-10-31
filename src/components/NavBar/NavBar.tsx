@@ -12,7 +12,7 @@ export default function NavBar() {
       </div>
       <div className="navbar-center hidden lg:flex">
 
-        <a className="btn btn-ghost normal-case text-xl">Geacord</a>
+        <a href='/' className="btn btn-ghost normal-case text-xl">Geacord</a>
       </div>
       <div className="navbar-end">
         <Profile />

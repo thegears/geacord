@@ -4,6 +4,7 @@
       "navbar": {
         "profile": {
           "logout": "Çıkış Yap",
+          "login": "Giriş Yap",
           "profile": "Profil"
         },
         "theme": {
@@ -23,6 +24,15 @@
         "text1": "Merhaba, bu bir chat app",
         "text2": "...ama ücretsiz ve açık kaynak!"
       }
+    },
+    "login-register": {
+      "avatar": "Avatar",
+      "username": "Kullanıcı adı",
+      "login": "Giriş yap",
+      "password": "Şifre",
+      "register": "Kayıt ol",
+      "register-username-alert": "Bu kullanıcı adı zaten kullanılıyor",
+      "register-login-alert": "Kullanıcı adı veya şifre yanlış"
     }
   }
 }

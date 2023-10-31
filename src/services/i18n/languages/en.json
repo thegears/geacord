@@ -4,6 +4,7 @@
       "navbar": {
         "profile": {
           "logout": "Log Out",
+          "login": "Log In",
           "profile": "Profile"
         },
         "theme": {
@@ -23,6 +24,15 @@
         "text1": "Hello there, this is a chat app",
         "text2": "...but it's free and open source!"
       }
+    },
+    "login-register": {
+      "avatar": "Avatar",
+      "username": "Username",
+      "login": "Login",
+      "password": "Password",
+      "register": "Register",
+      "register-username-alert": "This username is already in use",
+      "register-login-alert": "Username or password is wrong"
     }
   }
 }
