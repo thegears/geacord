@@ -36,14 +36,14 @@ export default function Profile() {
 
             <div className="avatar">
               <div className="w-8 rounded-full ring ring-primary ring-offset-base-100 ring-offset-2">
-                <img src={`http://geacord.pockethost.io/api/files/users/${$User?.id}/${$User?.avatar}?token=`} />
+                <img src={`http://geacord.pockethost.io/api/files/users/${$User?.id}/${$User?.avatar}`} />
               </div>
               <span className='font-bold'>{$User?.username}</span>
             </div>
           </li>
         }
         {
-          ($isLogined) && <><li><a> <MessageCircle /> Chat</a></li></>
+          ($isLogined) && <><li><a href="/chat"> <MessageCircle /> Chat</a></li></>
         }
         <li><a href={loginLogoutHref()}>
           {

@@ -66,13 +66,13 @@ export default function Middle() {
                   <label className="label">
                     <span className="label-text">{t("login-register.username")}</span>
                   </label>
-                  <input minLength={3} type="text" className="input input-bordered text-base-content" required />
+                  <input name='username' autoComplete='true' minLength={3} type="text" className="input input-bordered text-base-content" required />
                 </div>
                 <div className="form-control">
                   <label className="label">
                     <span className="label-text">{t("login-register.password")}</span>
                   </label>
-                  <input minLength={8} type="password" className="input input-bordered" required />
+                  <input name='password' minLength={8} type="password" className="input input-bordered" required />
                   <label className="label">
                     <a href={(i18n.language == 'tr') ? '/giris' : '/login'} className="label-text-alt link link-hover">{t("login-register.login")}</a>
                   </label>

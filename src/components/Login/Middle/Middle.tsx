@@ -10,7 +10,7 @@ export default function Middle() {
   const [loginAlert, setLoginAlert] = useState(false);
   const [loading, setLoading] = useState(false);
 
-  async function onFormSubmit(event) {
+  async function onFormSubmit(event: any) {
     event.preventDefault();
 
 
@@ -49,13 +49,13 @@ export default function Middle() {
                   <label className="label">
                     <span className="label-text">{t("login-register.username")}</span>
                   </label>
-                  <input type="text" className="input input-bordered text-base-content" required />
+                  <input minLength={3} name='username' autoComplete='true' type="text" className="input input-bordered text-base-content" required />
                 </div>
                 <div className="form-control">
                   <label className="label">
                     <span className="label-text">{t("login-register.password")}</span>
                   </label>
-                  <input type="password" className="input input-bordered" required />
+                  <input minLength={8} name='password' type="password" className="input input-bordered" required />
                   <label className="label">
                     <a href={(i18n.language == 'tr') ? '/kayit' : '/register'} className="label-text-alt link link-hover">{t("login-register.register")}</a>
                   </label>

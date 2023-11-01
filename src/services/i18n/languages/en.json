@@ -33,6 +33,9 @@
       "register": "Register",
       "register-username-alert": "This username is already in use",
       "register-login-alert": "Username or password is wrong"
+    },
+    "chat": {
+      "account": "Account"
     }
   }
 }

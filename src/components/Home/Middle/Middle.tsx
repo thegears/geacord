@@ -1,8 +1,11 @@
 import { useTranslation } from 'react-i18next';
+import { MessageCircle, LogIn } from 'react-feather';
+import { isLogined } from '../../../services/pocketbase/user';
 
 export default function Middle() {
 
-  const { t } = useTranslation();
+  const $isLogined = isLogined();
+  const { t, i18n } = useTranslation();
 
 
   return <>
@@ -13,6 +16,15 @@ export default function Middle() {
           <div className="max-w-md">
             <h1 className="mb-5 text-5xl font-bold">{t("home.middle.text1")}</h1>
             <p className="mb-5">{t("home.middle.text2")}</p>
+            {
+              ($isLogined) ? <>
+
+                <a role="button" href="/chat" className="btn"> <MessageCircle /> Chat</a>
+              </> : <>
+
+                <a role="button" href={(i18n.language == "tr") ? "/giris" : "/login"} className="btn"> <LogIn /> {t("login-register.login")}</a>
+              </>
+            }
           </div>
         </div>
       </div>

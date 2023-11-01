@@ -33,6 +33,9 @@
       "register": "Kayıt ol",
       "register-username-alert": "Bu kullanıcı adı zaten kullanılıyor",
       "register-login-alert": "Kullanıcı adı veya şifre yanlış"
+    },
+    "chat": {
+      "account": "Account"
     }
   }
 }
