@@ -5,9 +5,7 @@ import { isLogined } from '../../../services/pocketbase/user';
 export default function Middle() {
 
   const $isLogined = isLogined();
-  const { t, i18n } = useTranslation();
-
-
+  const { t } = useTranslation();
   return <>
     <div className="bg-primary">
       <div id="mid" className="hero min-h-screen" style={{ backgroundImage: `url(/${localStorage.getItem("theme") || 'dark'}-bg.svg)` }}>
@@ -22,7 +20,7 @@ export default function Middle() {
                 <a role="button" href="/chat" className="btn"> <MessageCircle /> Chat</a>
               </> : <>
 
-                <a role="button" href={(i18n.language == "tr") ? "/giris" : "/login"} className="btn"> <LogIn /> {t("login-register.login")}</a>
+                <a role="button" href='/login' className="btn"> <LogIn /> {t("login-register.login")}</a>
               </>
             }
           </div>

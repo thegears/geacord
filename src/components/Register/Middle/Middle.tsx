@@ -1,13 +1,13 @@
 import { useTranslation } from 'react-i18next';
 import { registerUser, loginUser } from '../../../services/pocketbase/user';
 import { useState } from 'react';
-import UsernameAlert from '../Alert/UsernameAlert';
+import Alert from '../Alert/Alert';
 
 export default function Middle() {
 
   const { t, i18n } = useTranslation();
 
-  const [usernameAlert, setUsernameAlert] = useState(false);
+  const [alert, setAlert] = useState("");
   const [loading, setLoading] = useState(false);
 
   async function onFormSubmit(event: any) {
@@ -32,9 +32,15 @@ export default function Middle() {
     if (res != 200) {
       setLoading(false);
       if (res.data?.data?.username) {
-        setUsernameAlert(true);
+        setAlert("username");
         setTimeout(() => {
-          setUsernameAlert(false);
+          setAlert("");
+        }, 3000);
+      }
+      else if (res.data?.data?.avatar) {
+        setAlert("avatar");
+        setTimeout(() => {
+          setAlert("");
         }, 3000);
       };
     } else {
@@ -47,7 +53,7 @@ export default function Middle() {
 
   return <>
     {
-      (usernameAlert) && <UsernameAlert />
+      (alert != "") && <Alert error={alert} />
     }
     <div className="bg-primary">
       <div id="mid" className="hero min-h-screen" style={{ backgroundImage: `url(/${localStorage.getItem("theme") || 'dark'}-bg.svg)` }}>

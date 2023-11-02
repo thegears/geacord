@@ -32,10 +32,44 @@
       "password": "Password",
       "register": "Register",
       "register-username-alert": "This username is already in use",
+      "register-avatar-alert": "Avatar: unsupperted filename",
       "register-login-alert": "Username or password is wrong"
     },
     "chat": {
-      "account": "Account"
+      "account": {
+        "account": "Account",
+        "change-theme": "Change Theme",
+        "change-theme-desc": "Change app's theme and background.",
+        "disable-bg": "Disable Background",
+        "disable-bg-desc": "Disable image in the background.",
+        "change-language": "Change Language",
+        "change-language-desc": "Change app's language.",
+        "turkish": "Turkish",
+        "english": "English"
+      },
+      "add-server": {
+        "add-server": "Add Server",
+        "create-server": "Create Server",
+        "name": "Name",
+        "create": "Create",
+        "join-server": "Join Server",
+        "join": "Join",
+        "code": "Code",
+        "undefined-server": "Undefined server"
+      },
+      "create-channel": {
+        "create-channel": "Create Channel"
+      },
+      "channel-tab": {
+        "write": "Write a message"
+      },
+      "server-tab": {
+        "copied": "Server's code copied.",
+        "invite-users": "Invite Users",
+        "create-channel": "Create Channel",
+        "delete-server": "Delete Server",
+        "quit-server": "Quit Server"
+      }
     }
   }
 }

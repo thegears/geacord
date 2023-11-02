@@ -24,6 +24,9 @@ export async function loginUser(username: string, password: string) {
 };
 
 export async function getUser() {
+  await PB.collection('users').authRefresh({
+    expand: "servers.channels.messages.author,servers.members",
+  });
   return PB.authStore.model;
 };
 

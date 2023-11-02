@@ -32,10 +32,44 @@
       "password": "Şifre",
       "register": "Kayıt ol",
       "register-username-alert": "Bu kullanıcı adı zaten kullanılıyor",
+      "register-avatar-alert": "Avatar: desteklenmeyen dosya adı",
       "register-login-alert": "Kullanıcı adı veya şifre yanlış"
     },
     "chat": {
-      "account": "Account"
+      "account": {
+        "account": "Hesap",
+        "change-theme": "Temayı Değiştir",
+        "change-theme-desc": "Sitenin temasını değiştir.",
+        "disable-bg": "Arkaplanı kaldır",
+        "disable-bg-desc": "Arkaplandaki resmi kaldırır.",
+        "change-language": "Dili değiştir",
+        "change-language-desc": "Sitenin dilini değiştir.",
+        "turkish": "Türkçe",
+        "english": "İngilizce"
+      },
+      "add-server": {
+        "add-server": "Sunucu Ekle",
+        "create-server": "Sunucu Oluştur",
+        "name": "İsim",
+        "create": "Oluştur",
+        "join-server": "Sunucuya katıl",
+        "join": "Katıl",
+        "code": "Kod",
+        "undefined-server": "Sunucu bulunamadı"
+      },
+      "create-channel": {
+        "create-channel": "Kanal Oluştur"
+      },
+      "channel-tab": {
+        "write": "Bir mesaj yaz"
+      },
+      "server-tab": {
+        "copied": "Sunucunun kodu kopyalandı.",
+        "invite-users": "Kullanıcıları davet et",
+        "create-channel": "Kanal Oluştur",
+        "delete-server": "Sunucuyu Sil",
+        "quit-server": "Sunucudan Çık"
+      }
     }
   }
 }
