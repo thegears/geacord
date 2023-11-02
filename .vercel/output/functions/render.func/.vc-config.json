@@ -1,0 +1,5 @@
+{
+	"runtime": "nodejs18.x",
+	"handler": "home/thegears/Desktop/codes/geacord/dist/entry.mjs",
+	"launcherType": "Nodejs"
+}
